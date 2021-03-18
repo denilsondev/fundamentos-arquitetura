@@ -11,7 +11,7 @@ namespace OOP
         private readonly string _nome;
         private readonly string _voltagem;
 
-        protected Eletrodomestico(string nome, string voltagem)
+        protected Eletrodomestico(string nome, int voltagem)
         {
             _nome = nome;
             _voltagem = voltagem;
@@ -20,5 +20,10 @@ namespace OOP
         public abstract void Ligar();
         public abstract void Desligar();
 
+        //virtual não obriga a sobscrita mas permite
+        public virtual void Testar()
+        {
+            //teste do equipemanto
+        }
     }
 }
