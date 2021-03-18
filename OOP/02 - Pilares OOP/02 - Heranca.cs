@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OOP._02___Pilares_OOP
+namespace OOP
 {
     // Herança é um meio de voce herdar todos as propriedades e métodos da classe mãe
     // Classe base "É uma" classe mãe. Ex: Funcionario É UMA Pessoa. Se isso nao fizer sentido, significa que não deveria ter este tipo de herança. Nunca isso podera ser pensado na estrategia de economizar implementação.
