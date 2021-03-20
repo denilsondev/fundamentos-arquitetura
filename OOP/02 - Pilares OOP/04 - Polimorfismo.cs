@@ -27,7 +27,7 @@ namespace OOP
 
         }
 
-        private void PrepararCafe()
+        public void PrepararCafe()
         {
             Testar();
             AquecerAgua();
