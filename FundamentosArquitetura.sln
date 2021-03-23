@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "OOP\OOP.csproj", "{E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Modificadores", "02 - Modificadores", "{F3167465-CD9F-42C4-8CCE-1260DED88D7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoA", "Modificadores\ProjetoA\ProjetoA.csproj", "{074C16A7-A256-4474-A3D5-9F108A461EF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoA", "Modificadores\ProjetoA\ProjetoA.csproj", "{074C16A7-A256-4474-A3D5-9F108A461EF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoB", "Modificadores\ProjetoB\ProjetoB.csproj", "{FE4721F4-9466-4844-A61A-AD0D040AB855}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoB", "Modificadores\ProjetoB\ProjetoB.csproj", "{FE4721F4-9466-4844-A61A-AD0D040AB855}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
