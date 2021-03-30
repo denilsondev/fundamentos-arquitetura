@@ -50,6 +50,65 @@ namespace OOP
 
         #region Caso 2
 
+        public interface IRepositorio<T>
+        {
+            void Adicionar(T obj);
+            void Excluir(T obj);
+        }
+
+        public interface IRepositorioPessoa
+        {
+            void Adicionar(Pessoa obj);
+        }
+
+        public class Repositorio<T> : IRepositorio<T>
+        {
+            public void Adicionar(T obj)
+            {
+
+            }
+
+            public void Excluir(T obj)
+            { 
+
+            }
+
+        }
+
+        public class RepositorioHerancaPessoa : Repositorio<Pessoa>, IRepositorioPessoa
+        {
+
+        }
+
+        public class RepositorioComposicaoPessoa : IRepositorioPessoa
+        {
+            private readonly IRepositorio<Pessoa> _repositorioPessoa;
+
+            public RepositorioComposicaoPessoa(IRepositorio<Pessoa> repositorioPessoa)
+            {
+                _repositorioPessoa = repositorioPessoa;
+            }
+            public void Adicionar(Pessoa obj)
+            {
+                _repositorioPessoa.Adicionar(obj);
+            }
+
+        }
+
+        public class TestesHerancaComposicao2
+        {
+            public TestesHerancaComposicao2()
+            {
+                var repoHeranca = new RepositorioHerancaPessoa();
+                repoHeranca.Adicionar(new Pessoa());
+                repoHeranca.Excluir(new Pessoa());
+
+                var repoComposicao = new RepositorioComposicaoPessoa(new Repositorio<Pessoa>());
+                repoComposicao.Adicionar(new Pessoa());
+
+            }
+        }
+
         #endregion
     }
 }
