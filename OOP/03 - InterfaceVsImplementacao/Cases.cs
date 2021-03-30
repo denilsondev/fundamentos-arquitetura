@@ -8,11 +8,6 @@ namespace OOP
 
     public class Repositorio : IRepositorio
     {
-        //public Repositorio(int a)
-        //{
-
-        //}
-
         public void Adicionar()
         {
 
@@ -49,7 +44,7 @@ namespace OOP
 
         public void Processo()
         {
-            _repositorio.Adicionar()
+            _repositorio.Adicionar();
         }
     }
 
@@ -65,9 +60,10 @@ namespace OOP
 
             var repoAbsFake = new UsoAbstracao(new RepositorioFake());
             repoAbsFake.Processo();
-                
+
         }
     }
+}
 
 
 
