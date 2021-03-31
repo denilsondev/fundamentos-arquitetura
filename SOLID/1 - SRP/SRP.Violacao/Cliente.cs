@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Text;
 
-namespace SOLID
+namespace SOLID.SRP.Violacao
 {
     //Single Responsability Principle Violation - Esta classe tem varios motivos de mudanca. Tanto no contexto de validacao, conexao, query, email, etc.
     class Cliente
