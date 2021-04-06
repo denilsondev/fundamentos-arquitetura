@@ -4,6 +4,7 @@ using System.Text;
 
 namespace SOLID.SRP.Solucao
 {
+    //A class should have one, and only one, reason to change
     class Cliente
     {
         public int ClientId { get; set; }

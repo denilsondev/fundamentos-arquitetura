@@ -55,8 +55,8 @@ namespace OOP
             var repoImp = new UsoImplementacao();
             repoImp.Processo();
 
-            var repoAbs = new UsoImplementacao(new Repositorio());
-            repoAbs.Processo();
+            //var repoAbs = new UsoImplementacao(new Repositorio());
+            //repoAbs.Processo();
 
             var repoAbsFake = new UsoAbstracao(new RepositorioFake());
             repoAbsFake.Processo();
