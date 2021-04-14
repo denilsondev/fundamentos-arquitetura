@@ -13,4 +13,12 @@ namespace DI {
 
     }
 
+    class FromServiceDI {
+        //Quando nao eh possivel utilizar o construtor da classe para injetar dependencias, pode se usar o ˜fromServices`no metodo para a injecao.
+        public void Index([FromServices]IclienteServices clienteServices)
+        {
+            clienteServices.AdicionarCliente(new Cliente());
+        }
+    }
+
 }
